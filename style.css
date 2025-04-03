@@ -1,0 +1,143 @@
+/* Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Slightly adjusted light grey background like the GIF */
+}
+
+/* Color Variables - Using your established palette */
+:root {
+    --primary-color: #F3D4EA; /* Main soft pink/lavender - Used for subtle backgrounds/accents */
+    --secondary-color: #B1A2CA; /* Muted purple accent - Used for links, some borders, badges */
+    --text-color: #495057; /* Dark grey for text */
+    --heading-color: #7d6b9e; /* Darker purple for main headings and hover states */
+    --light-bg: #ffffff; /* White for section backgrounds (cards) */
+    --navbar-bg: #ffffff; /* White navbar */
+    --footer-bg: #e9ecef; /* Light grey footer */
+}
+
+/* Hero Section Styling - Using primary color */
+.hero-section {
+    background-color: var(--primary-color);
+    color: var(--heading-color); /* Darker purple text on the light pink bg */
+    border-bottom: 1px solid #e0c8d8; /* Subtle border */
+}
+
+.hero-section h1 {
+    font-weight: 600;
+}
+
+.hero-section .lead {
+    font-weight: 300;
+     color: #6c5b7b;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--navbar-bg) !important;
+    border-bottom: 1px solid #eee; /* Subtle border like some elements in GIF */
+}
+
+.navbar-brand {
+    color: var(--heading-color) !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--secondary-color) !important; /* Use secondary color for nav links */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    color: var(--heading-color) !important; /* Darker purple on hover/active */
+}
+
+/* Section Styling - White cards with shadow like GIF */
+.section-bg {
+    background-color: var(--light-bg);
+    border: 1px solid #eee; /* Add subtle border to sections */
+    /* box-shadow is already applied via Bootstrap class .shadow-sm */
+}
+
+.section-title {
+    color: var(--heading-color); /* Use darker purple for main section titles */
+    font-weight: 600;
+    border-bottom: 3px solid var(--secondary-color); /* Use secondary color for border */
+    padding-bottom: 0.6rem;
+    display: inline-block;
+}
+
+/* Accent Headings (e.g., Skills categories) */
+.accent-heading {
+    color: var(--heading-color); /* Use darker purple for emphasis */
+    font-weight: 600;
+    font-size: 1.1rem; /* Slightly larger */
+    margin-bottom: 1rem;
+}
+
+/* Skills Badges - Use secondary color like GIF's pink/coral accent */
+.skill-badge {
+    background-color: var(--secondary-color); /* Use secondary color for background */
+    color: var(--light-bg); /* White text for contrast */
+    padding: 0.4em 0.9em;
+    font-size: 0.88rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem; /* Spacing */
+    border-radius: 5px; /* Slightly less rounded */
+    border: none; /* Remove previous border */
+    display: inline-block; /* Ensure proper spacing */
+}
+
+/* Link Styling */
+.link-style {
+    color: var(--secondary-color); /* Use secondary color for links */
+    font-weight: 500; /* Slightly bolder */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-style:hover {
+    color: var(--heading-color); /* Darker purple on hover */
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer-bg {
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+    border-top: 1px solid #ddd;
+}
+
+/* General Text Color */
+body, p, li {
+    color: var(--text-color);
+}
+
+h3, h4, h5, h6 {
+     color: #6c5b7b;
+}
+
+/* List styling */
+ul {
+    padding-left: 1.2rem;
+}
+li {
+    margin-bottom: 0.4rem; /* Slightly increased spacing */
+}
+.list-styled li {
+    margin-bottom: 0.6rem;
+    padding-left: 0.5rem;
+    position: relative;
+}
+.list-styled li::before {
+    content: '•'; /* Standard bullet */
+    color: var(--secondary-color); /* Use secondary color */
+    position: absolute;
+    left: -0.8rem;
+    font-size: 1.2em; /* Make bullet more visible */
+    line-height: 1;
+}
