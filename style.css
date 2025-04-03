@@ -141,3 +141,40 @@ li {
     font-size: 1.2em; /* Make bullet more visible */
     line-height: 1;
 }
+
+/* Portfolio Section Specific Styles */
+.portfolio-card {
+    border: none; /* Remove default card border */
+    border-left: 4px solid var(--primary-color); /* Use primary color as left accent border */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: var(--light-bg); /* Ensure white background */
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+    border-left-color: var(--secondary-color); /* Change accent border color on hover */
+}
+
+.portfolio-card .card-title {
+    color: var(--heading-color); /* Use heading color for titles */
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-card .card-subtitle {
+    font-size: 0.85rem;
+    color: #6c757d; /* Standard muted text color */
+}
+
+.portfolio-card .card-text {
+    font-size: 0.9rem;
+    color: var(--text-color); /* Standard text color */
+}
+
+/* Ensure consistent spacing in grid */
+.g-4 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}
