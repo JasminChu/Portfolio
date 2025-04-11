@@ -531,10 +531,10 @@ li {
 
 /* Responsive Styles */
 @media (max-width: 1240px) {
-    .baby-resume-card-wrap::after {
+    /* .baby-resume-card-wrap::after {
         left: 50px;
         right: 50px;
-    }
+    } */
 
     .baby-resume-card {
         gap: 52px;
@@ -555,10 +555,10 @@ li {
         gap: 40px;
     }
 
-    .baby-resume-card-wrap::after {
+    /* .baby-resume-card-wrap::after {
         left: 500px;
         right: 500px;
-    }
+    } */
 
     .baby-resume-card-info.center {
         width: calc(100% - 380px);
