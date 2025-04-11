@@ -1,25 +1,38 @@
 /* Google Font */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa; /* Slightly adjusted light grey background like the GIF */
+    background-color: #f8f9fa;
+    /* Slightly adjusted light grey background like the GIF */
 }
 
 /* Color Variables - Using your established palette */
 :root {
-    --primary-color: #F3D4EA; /* Main soft pink/lavender - Used for subtle backgrounds/accents */
-    --secondary-color: #B1A2CA; /* Muted purple accent - Used for links, some borders, badges */
-    --text-color: #495057; /* Dark grey for text */
-    --heading-color: #7d6b9e; /* Darker purple for main headings and hover states */
-    --light-bg: #ffffff; /* White for section backgrounds (cards) */
-    --navbar-bg: #ffffff; /* White navbar */
-    --footer-bg: #e9ecef; /* Light grey footer */
+    --primary-color: #F3D4EA;
+    /* Main soft pink/lavender - Used for subtle backgrounds/accents */
+    --secondary-color: #B1A2CA;
+    /* Muted purple accent - Used for links, some borders, badges */
+    --text-color: #495057;
+    /* Dark grey for text */
+    --heading-color: #7d6b9e;
+    /* Darker purple for main headings and hover states */
+    --light-bg: #ffffff;
+    /* White for section backgrounds (cards) */
+    --navbar-bg: #ffffff;
+    /* White navbar */
+    --footer-bg: #e9ecef;
+    /* Light grey footer */
+    --bubble-gradient-start: var(--secondary-color);
+    --bubble-gradient-end: var(--primary-color);
+    --circle-stroke: var(--secondary-color);
 }
 
 /* Hero Section Styling - Using primary color */
 .hero-section {
     background-color: var(--primary-color);
-    color: var(--heading-color); /* Darker purple text on the light pink bg */
-    border-bottom: 1px solid #e0c8d8; /* Subtle border */
+    color: var(--heading-color);
+    /* Darker purple text on the light pink bg */
+    border-bottom: 1px solid #e0c8d8;
+    /* Subtle border */
 }
 
 .hero-section h1 {
@@ -28,13 +41,14 @@ body {
 
 .hero-section .lead {
     font-weight: 300;
-     color: #6c5b7b;
+    color: #6c5b7b;
 }
 
 /* Navbar Styling */
 .navbar {
     background-color: var(--navbar-bg) !important;
-    border-bottom: 1px solid #eee; /* Subtle border like some elements in GIF */
+    border-bottom: 1px solid #eee;
+    /* Subtle border like some elements in GIF */
 }
 
 .navbar-brand {
@@ -43,7 +57,8 @@ body {
 }
 
 .nav-link {
-    color: var(--secondary-color) !important; /* Use secondary color for nav links */
+    color: var(--secondary-color) !important;
+    /* Use secondary color for nav links */
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     font-weight: 400;
@@ -53,55 +68,70 @@ body {
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.active {
-    color: var(--heading-color) !important; /* Darker purple on hover/active */
+    color: var(--heading-color) !important;
+    /* Darker purple on hover/active */
 }
 
 /* Section Styling - White cards with shadow like GIF */
 .section-bg {
     background-color: var(--light-bg);
-    border: 1px solid #eee; /* Add subtle border to sections */
+    border: 1px solid #eee;
+    /* Add subtle border to sections */
     /* box-shadow is already applied via Bootstrap class .shadow-sm */
 }
 
 .section-title {
-    color: var(--heading-color); /* Use darker purple for main section titles */
+    color: var(--heading-color);
+    /* Use darker purple for main section titles */
     font-weight: 600;
-    border-bottom: 3px solid var(--secondary-color); /* Use secondary color for border */
+    border-bottom: 3px solid var(--secondary-color);
+    /* Use secondary color for border */
     padding-bottom: 0.6rem;
     display: inline-block;
 }
 
 /* Accent Headings (e.g., Skills categories) */
 .accent-heading {
-    color: var(--heading-color); /* Use darker purple for emphasis */
+    color: var(--heading-color);
+    /* Use darker purple for emphasis */
     font-weight: 600;
-    font-size: 1.1rem; /* Slightly larger */
+    font-size: 1.1rem;
+    /* Slightly larger */
     margin-bottom: 1rem;
 }
 
 /* Skills Badges - Use secondary color like GIF's pink/coral accent */
 .skill-badge {
-    background-color: var(--secondary-color); /* Use secondary color for background */
-    color: var(--light-bg); /* White text for contrast */
+    background-color: var(--secondary-color);
+    /* Use secondary color for background */
+    color: var(--light-bg);
+    /* White text for contrast */
     padding: 0.4em 0.9em;
     font-size: 0.88rem;
     font-weight: 400;
-    margin-bottom: 0.6rem; /* Spacing */
-    border-radius: 5px; /* Slightly less rounded */
-    border: none; /* Remove previous border */
-    display: inline-block; /* Ensure proper spacing */
+    margin-bottom: 0.6rem;
+    /* Spacing */
+    border-radius: 5px;
+    /* Slightly less rounded */
+    border: none;
+    /* Remove previous border */
+    display: inline-block;
+    /* Ensure proper spacing */
 }
 
 /* Link Styling */
 .link-style {
-    color: var(--secondary-color); /* Use secondary color for links */
-    font-weight: 500; /* Slightly bolder */
+    color: var(--secondary-color);
+    /* Use secondary color for links */
+    font-weight: 500;
+    /* Slightly bolder */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .link-style:hover {
-    color: var(--heading-color); /* Darker purple on hover */
+    color: var(--heading-color);
+    /* Darker purple on hover */
     text-decoration: underline;
 }
 
@@ -113,51 +143,70 @@ body {
 }
 
 /* General Text Color */
-body, p, li {
+body,
+p,
+li {
     color: var(--text-color);
 }
 
-h3, h4, h5, h6 {
-     color: #6c5b7b;
+h3,
+h4,
+h5,
+h6 {
+    color: #6c5b7b;
 }
 
 /* List styling */
 ul {
     padding-left: 1.2rem;
 }
+
 li {
-    margin-bottom: 0.4rem; /* Slightly increased spacing */
+    margin-bottom: 0.4rem;
+    /* Slightly increased spacing */
 }
+
 .list-styled li {
     margin-bottom: 0.6rem;
     padding-left: 0.5rem;
     position: relative;
 }
+
 .list-styled li::before {
-    content: '•'; /* Standard bullet */
-    color: var(--secondary-color); /* Use secondary color */
+    content: '•';
+    /* Standard bullet */
+    color: var(--secondary-color);
+    /* Use secondary color */
     position: absolute;
     left: -0.8rem;
-    font-size: 1.2em; /* Make bullet more visible */
+    font-size: 1.2em;
+    /* Make bullet more visible */
     line-height: 1;
 }
 
 /* Portfolio Section Specific Styles */
 .portfolio-card {
-    border: none; /* Remove default card border */
-    border-left: 4px solid var(--primary-color); /* Use primary color as left accent border */
+    border: none;
+    /* Remove default card border */
+    border-left: 4px solid var(--primary-color);
+    /* Use primary color as left accent border */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    background-color: var(--light-bg); /* Ensure white background */
+    background-color: var(--light-bg);
+    /* Ensure white background */
 }
 
 .portfolio-card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
-    border-left-color: var(--secondary-color); /* Change accent border color on hover */
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Enhance shadow on hover */
+    border-left-color: var(--secondary-color);
+    /* Change accent border color on hover */
 }
 
 .portfolio-card .card-title {
-    color: var(--heading-color); /* Use heading color for titles */
+    color: var(--heading-color);
+    /* Use heading color for titles */
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
@@ -165,16 +214,474 @@ li {
 
 .portfolio-card .card-subtitle {
     font-size: 0.85rem;
-    color: #6c757d; /* Standard muted text color */
+    color: #6c757d;
+    /* Standard muted text color */
 }
 
 .portfolio-card .card-text {
     font-size: 0.9rem;
-    color: var(--text-color); /* Standard text color */
+    color: var(--text-color);
+    /* Standard text color */
 }
 
 /* Ensure consistent spacing in grid */
 .g-4 {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 1.5rem;
+}
+
+/* Skills Section Specific Styles - Styled List Approach */
+
+/* Ensure category headings are styled */
+.accent-heading {
+    color: var(--heading-color);
+    /* Use darker purple for emphasis */
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--primary-color);
+    /* Subtle underline */
+    display: inline-block;
+}
+
+/* Styling for the skill list */
+.skill-list-styled {
+    padding-left: 0;
+    /* Remove default ul padding */
+    margin-bottom: 0;
+}
+
+.skill-list-styled li {
+    color: var(--text-color);
+    padding: 0.6rem 0.5rem 0.6rem 2rem;
+    /* Top/bottom, right, left padding */
+    margin-bottom: 0.25rem;
+    position: relative;
+    /* Needed for the ::before pseudo-element */
+    /* border-top: 1px solid #fdfaff; Very light top border */
+    /* border-bottom: 1px solid #f0eaf5; Light bottom border using primary color tones */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-size: 0.95rem;
+    font-weight: 400;
+    /* Adjust font weight */
+}
+
+/* Add a custom marker using the secondary color */
+.skill-list-styled li::before {
+    content: 'ꕥ';
+    /* Checkmark symbol */
+    position: absolute;
+    left: 0.5rem;
+    /* Position marker */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Center marker vertically */
+    color: var(--secondary-color);
+    /* Use secondary color */
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1;
+}
+
+/* .skill-list-styled li:first-child {
+     border-top: 1px solid #f0eaf5; Match bottom border for the first item
+} */
+
+.skill-list-styled li:hover {
+    background-color: var(--primary-color);
+    /* Use primary color as hover background */
+    color: var(--heading-color);
+    /* Darker text on hover */
+    cursor: default;
+}
+
+/* Adjust grid columns for skills section if needed */
+#skills .col-lg-4 {
+    margin-bottom: 1.5rem;
+    /* Ensure consistent spacing */
+}
+
+/* Baby Resume Card Styles */
+.baby-resume-card-wrap {
+    margin-top: 40px;
+    padding-bottom: 32px;
+    position: relative;
+    min-height: 500px;
+    /* Add minimum height to contain animations */
+}
+
+.baby-resume-card-wrap::after {
+    content: "";
+    background: var(--primary-color);
+    opacity: 0.3;
+    border-radius: 40px;
+    bottom: 0;
+    left: 40px;
+    position: absolute;
+    right: 40px;
+    top: 19%;
+}
+
+.baby-resume-card-wrap .wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.baby-resume-card {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.baby-resume-card-info {
+    width: 240px;
+}
+
+.baby-resume-card-info.center {
+    order: 2;
+    position: relative;
+    width: calc(100% - 600px);
+}
+
+.baby-resume-card-info-position {
+    border-radius: 16px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.baby-resume-card-info img {
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .1), 0px 1px 2px rgba(0, 0, 0, .06);
+    max-width: 100%;
+    display: block;
+}
+
+/* Animation Container Styles */
+.baby-resume-card-animation {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 800px;
+    z-index: 0;
+    top: 54px;
+    pointer-events: none;
+}
+
+.baby-resume-card-animation svg {
+    position: absolute;
+}
+
+.baby-resume-card-animation svg rect {
+    stroke: var(--secondary-color);
+    stroke-width: 1.5px;
+    /* Make circles more visible */
+}
+
+.baby-resume-card-animation svg.first {
+    animation: scaleOpacity 6s infinite, scaleCircle 6s infinite;
+    height: 800px;
+    right: 0;
+    top: 0;
+    width: 800px;
+}
+
+.baby-resume-card-animation svg.second {
+    animation: scaleCircleMore 6s infinite;
+    height: 720px;
+    right: 40px;
+    top: 40px;
+    width: 720px;
+}
+
+.baby-resume-card-animation svg.third {
+    animation: scaleCircleMore 6s infinite;
+    height: 660px;
+    right: 70px;
+    top: 70px;
+    width: 660px;
+}
+
+/* Bubble Animation Styles */
+.baby-resume-bubble-animation {
+    height: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center horizontally */
+    position: absolute;
+    width: 800px;
+    z-index: 1;
+    top: 100px;
+    /* Adjust this value to position bubbles correctly */
+    pointer-events: none;
+}
+
+.baby-resume-bubble-animation span {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    border-radius: 50%;
+    display: block;
+    /* Change from inline-block to block */
+    position: absolute;
+    opacity: 0.7;
+    /* Make bubbles more visible */
+}
+
+.baby-resume-bubble-animation span.big {
+    height: 20px;
+    /* Increased from 14px */
+    width: 20px;
+}
+
+.baby-resume-bubble-animation span.small {
+    height: 12px;
+    /* Increased from 8px */
+    width: 12px;
+}
+
+/* Bubble Positions with Animations */
+.baby-resume-bubble-animation span.top-left {
+    animation: moveLeft 6s infinite;
+    left: 40px;
+    top: 200px;
+}
+
+.baby-resume-bubble-animation span.top-left-down {
+    animation: moveLeft 6s infinite;
+    left: 80px;
+    top: 250px;
+}
+
+.baby-resume-bubble-animation span.top-right {
+    animation: moveRight 6s infinite;
+    right: 70px;
+    top: 200px;
+}
+
+.baby-resume-bubble-animation span.top-right-down {
+    animation: moveRight 6s infinite;
+    right: 100px;
+    top: 230px;
+}
+
+.baby-resume-bubble-animation span.bottom-right {
+    animation: moveRightDown 6s infinite;
+    right: 70px;
+    bottom: 200px;
+}
+
+.baby-resume-bubble-animation span.bottom-right-down {
+    animation: moveRightDown 6s infinite;
+    right: 100px;
+    bottom: 230px;
+}
+
+.baby-resume-bubble-animation span.bottom-left {
+    animation: moveLeftDown 6s infinite;
+    left: 40px;
+    bottom: 200px;
+}
+
+/* Animation Keyframes */
+@keyframes moveLeft {
+    50% {
+        transform: translate(-70px, 0);
+    }
+}
+
+@keyframes moveRight {
+    50% {
+        transform: translate(70px, 0);
+    }
+}
+
+@keyframes moveLeftDown {
+    50% {
+        transform: translate(-70px, 40px);
+    }
+}
+
+@keyframes moveRightDown {
+    50% {
+        transform: translate(70px, 40px);
+    }
+}
+
+@keyframes scaleCircleMore {
+    50% {
+        transform: scale(1.28);
+    }
+}
+
+@keyframes scaleOpacity {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes scaleCircle {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1240px) {
+    .baby-resume-card-wrap::after {
+        left: 50px;
+        right: 50px;
+    }
+
+    .baby-resume-card {
+        gap: 52px;
+    }
+
+    .baby-resume-card-info.center {
+        width: calc(100% - 100px);
+    }
+
+    .baby-resume-card-animation,
+    .baby-resume-bubble-animation {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 976px) {
+    .baby-resume-card {
+        gap: 40px;
+    }
+
+    .baby-resume-card-wrap::after {
+        left: 500px;
+        right: 500px;
+    }
+
+    .baby-resume-card-info.center {
+        width: calc(100% - 380px);
+    }
+
+    .baby-resume-card-animation,
+    .baby-resume-bubble-animation {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 768px) {
+    .baby-resume-card {
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 480px;
+    }
+
+    .baby-resume-card-info.center {
+        order: 1;
+        width: 100%;
+    }
+
+    .baby-resume-card-animation,
+    .baby-resume-bubble-animation {
+        transform: translateX(-50%) scale(0.7);
+    }
+}
+
+@media (max-width: 560px) {
+    .baby-resume-card-wrap {
+        margin-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .baby-resume-card-wrap::after {
+        border-radius: 0;
+        left: 500px;
+        right: 500px;
+    }
+
+    .baby-resume-card {
+        gap: 20px;
+        margin: 0 20px;
+    }
+
+    .baby-resume-card-animation,
+    .baby-resume-bubble-animation {
+        transform: translateX(-50%) scale(0.5);
+    }
+}
+
+/* Add position relative to skills section to contain the animations */
+#skills {
+    position: relative;
+    overflow: hidden;
+    min-height: 800px;
+}
+
+/* Add this to ensure the portfolio section stays above any overflow */
+#portfolio {
+    position: relative;
+    z-index: 2;
+    background-color: var(--light-bg);
+    /* This ensures full opacity background */
+}
+
+/* Add these new styles */
+.animation-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baby-resume-card-animation {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+}
+
+.baby-resume-bubble-animation {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    z-index: 1;
+}
+
+/* Ensure the skills content stays on top */
+.section-title,
+.accent-heading,
+.skill-list-styled {
+    position: relative;
+    z-index: 2;
+}
+
+/* Make the background circles more visible */
+.baby-resume-card-animation svg rect {
+    stroke: var(--secondary-color);
+    stroke-width: 1.5px;
+}
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .baby-resume-card-animation,
+    .baby-resume-bubble-animation {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 768px) {
+    .baby-resume-card-animation,
+    .baby-resume-bubble-animation {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 576px) {
+    .baby-resume-card-animation,
+    .baby-resume-bubble-animation {
+        transform: scale(0.4);
+    }
 }
